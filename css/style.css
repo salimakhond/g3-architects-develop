@@ -1,0 +1,50 @@
+:root {
+    --primary-font: 'Work Sans', sans-serif;
+    --primary-color: #FF900E;
+    --dark1-color: #131313;
+    --dark1-color: #424242;
+    --dark3-color: #727272;
+    --white-color: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    border: none;
+}
+
+body {
+    font-family: var(--primary-font);
+    background-color: var(--white-color);
+}
+
+.container {
+    width: 1440px;
+    max-width: 100%;
+}
+
+ul {
+    padding: 0px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.primary-btn {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    padding: 20px 25px;
+    border-radius: 8px;
+    border: 1px transparent;
+}
+
+.primary-btn:hover {
+    border: 1px solid var(--primary-color);
+}
