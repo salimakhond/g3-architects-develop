@@ -2,7 +2,7 @@
     --primary-font: 'Work Sans', sans-serif;
     --primary-color: #FF900E;
     --dark1-color: #131313;
-    --dark1-color: #424242;
+    --dark2-color: #424242;
     --dark3-color: #727272;
     --white-color: #FFFFFF;
 }
@@ -47,4 +47,42 @@ a {
 
 .primary-btn:hover {
     border: 1px solid var(--primary-color);
+}
+
+/* header style */
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+.nav-title {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    color: var(--dark1-color);
+}
+
+.menus {
+    display: flex;
+    gap: 75px;
+}
+
+.menu a {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: var(--dark2-color);
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+}
+.menu:hover a {
+    color: var(--primary-color);
 }
