@@ -317,14 +317,14 @@ main area style
     bottom: -77px;
 }
 
-.feature-image .exprince-title {
+.feature-image .experience-title {
     font-weight: 700;
     font-size: 65px;
     line-height: 70px;
     color: var(--white-color);
 }
 
-.feature-image .exprince-description {
+.feature-image .experience-description {
     font-weight: 500;
     font-size: 25px;
     line-height: 40px;
@@ -590,7 +590,7 @@ footer area style end
         padding-left: 0px;
     }
 
-    .feature-image .exprince-title {
+    .feature-image .experience-title {
         font-size: 42px;
         line-height: 56px;
     }
@@ -651,7 +651,7 @@ footer area style end
     }
 
     footer {
-        margin: 70px 20px;
+        margin: 70px 30px;
     }
 
     .footer-description {
@@ -727,7 +727,7 @@ footer area style end
         padding-left: 0px;
     }
 
-    .feature-image .exprince-title {
+    .feature-image .experience-title {
         font-size: 55px;
         line-height: 68px;
     }
@@ -785,6 +785,7 @@ footer area style end
         padding: 38px 20px;
     }
 }
+
 /*-----------------------------
     media queries style end
 -----------------------------*/
