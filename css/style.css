@@ -167,10 +167,12 @@ header area style
 .banner-image {
     margin-top: 50px;
 }
-.banner-image img{
+
+.banner-image img {
     width: 100%;
     height: 100%;
 }
+
 /*-----------------------
 header area style end
 -----------------------*/
@@ -201,13 +203,21 @@ main area style
     gap: 24px;
     width: 100%;
 }
+
 .about-us-images {
     width: 100%;
     height: 100%;
 }
+
+.about-us-images img {
+    width: 100%;
+    height: 100%;
+}
+
 .about-us-content {
     width: 100%;
 }
+
 .about-us-title {
     font-weight: 700;
     font-size: 45px;
@@ -235,9 +245,11 @@ main area style
 .feature-content-head {
     margin-bottom: 30px;
 }
+
 .feature-content {
     width: 100%;
 }
+
 .feature-title {
     font-weight: 700;
     font-size: 45px;
@@ -288,6 +300,7 @@ main area style
 .feature-image .images {
     padding-left: 92px;
 }
+
 .feature-image img {
     width: 100%;
     height: 100%;
@@ -359,10 +372,12 @@ main area style
     -webkit-transition: all 0.4s ease;
     -moz-transition: all 0.4s ease;
 }
+
 .single-fun-fact:hover {
     transform: rotate(360deg);
     border-radius: 50%;
 }
+
 .single-fun-fact .fun-count {
     font-weight: 600;
     font-size: 45px;
@@ -413,8 +428,9 @@ articles area style
 }
 
 .blogs {
-    display: flex;
+    display: grid;
     gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .single-blog {
@@ -432,6 +448,7 @@ articles area style
 .blog-content {
     padding: 30px;
     border-radius: 0px 0px 8px 8px;
+    padding-bottom: 40px;
 }
 
 .date {
@@ -502,115 +519,272 @@ footer area style end
 -------------------------*/
 /* mobile device */
 @media only screen and (max-width:576px) {
+    .header {
+        padding: 0px 30px;
+    }
+
     .nav {
         padding-top: 35px;
     }
+
     .nav-title {
         font-size: 32px;
         line-height: 45px;
     }
+
     .menus {
         display: none;
     }
+
     .side-bar {
         display: block;
     }
+
     .banner-content {
         width: 100%;
     }
+
     .banner-title {
         font-size: 32px;
         line-height: 44px;
     }
-    .header {
-        padding: 0px 30px;
-    }
+
     .banner {
         padding: 30px 0px 20px 0px;
     }
+
+    .main {
+        padding: 0px 30px;
+    }
+
     .about-us-area {
         flex-direction: column;
         gap: 35px;
         padding: 50px 0px 70px 0px;
     }
+
     .about-us-images {
         grid-template-columns: repeat(1, 1fr);
     }
-    .main {
-        padding: 0px 30px;
-    }
+
     .about-us-title {
         font-size: 36px;
         line-height: 48px;
     }
+
     .about-us-description {
         margin: 15px 0px 25px 0px;
     }
+
     .feature-area {
         padding-bottom: 70px;
         flex-direction: column;
     }
+
     .feature-title {
         font-size: 36px;
         line-height: 48px;
     }
+
     .feature-image .images {
         padding-left: 0px;
     }
+
     .feature-image .exprince-title {
         font-size: 42px;
         line-height: 56px;
     }
+
     .feature-image .feature-image-title {
         bottom: 4px;
         border-radius: 0px 8px;
     }
+
     .fun-facts-head {
         margin-bottom: 50px;
     }
+
     .fun-facts-title {
         font-size: 36px;
         line-height: 48px;
         margin-bottom: 15px;
     }
+
     .fun-facts {
         flex-direction: column;
         gap: 30px;
     }
+
     .fun-facts-content {
         padding-bottom: 70px;
     }
+
     .section-head {
         width: 100%;
     }
+
     .section-title {
         font-size: 36px;
         line-height: 48px;
     }
+
     .sponsor-logo {
         flex-direction: column;
         gap: 50px;
     }
+
     .sponsors-area {
         margin-bottom: 70px;
     }
+
     .blogs {
-        flex-direction: column;
+        grid-template-columns: repeat(1, 1fr);
     }
+
     .article {
         padding: 0px 30px;
     }
+
     .blog-title a {
         font-size: 22px;
         line-height: 28px;
     }
+
     footer {
         margin: 70px 20px;
     }
+
     .footer-description {
         padding: 38px 20px;
     }
 }
 
 /* tab device */
-@media only screen and (min-width: 577px) and (max-width: 992px) {}
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+
+    .header {
+        padding: 0px 50px;
+    }
+
+    .nav {
+        padding-top: 40px;
+    }
+
+    .nav-title {
+        font-size: 38px;
+        line-height: 52px;
+    }
+
+    .menus {
+        display: none;
+    }
+
+    .side-bar {
+        display: block;
+    }
+
+    .side-bar a {
+        font-size: 28px;
+    }
+
+    .banner-content {
+        width: 100%;
+    }
+
+    .banner-title {
+        font-size: 54px;
+        line-height: 68px;
+    }
+
+    .banner {
+        padding-top: 80px;
+    }
+
+    .main {
+        padding: 0px 50px;
+    }
+
+    .about-us-area {
+        flex-direction: column;
+        gap: 35px;
+        padding: 70px 0px 100px 0px;
+    }
+
+    .about-us-images {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-us-description {
+        margin: 15px 0px 25px 0px;
+    }
+
+    .feature-area {
+        padding-bottom: 100px;
+        flex-direction: column;
+    }
+
+    .feature-image .images {
+        padding-left: 0px;
+    }
+
+    .feature-image .exprince-title {
+        font-size: 55px;
+        line-height: 68px;
+    }
+
+    .feature-image .feature-image-title {
+        bottom: 4px;
+        border-radius: 0px 8px;
+    }
+
+    .fun-facts-head {
+        margin-bottom: 70px;
+    }
+
+    .fun-facts {
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    .fun-facts-content {
+        padding-bottom: 100px;
+    }
+
+    .section-head {
+        width: 100%;
+    }
+
+    .sponsor-logo {
+        gap: 50px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .sponsors-area {
+        margin-bottom: 100px;
+    }
+
+    .article {
+        padding: 0px 50px;
+    }
+
+    .blogs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .blog-title a {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    footer {
+        margin: 70px 50px;
+    }
+
+    .footer-description {
+        padding: 38px 20px;
+    }
+}
+/*-----------------------------
+    media queries style end
+-----------------------------*/
